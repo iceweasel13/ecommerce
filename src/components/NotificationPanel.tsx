@@ -26,7 +26,7 @@ const NotificationPanel = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div className="relative">
+        <div className="relative ">
           <Image
             src="/notification.png"
             alt="notification"
@@ -45,7 +45,10 @@ const NotificationPanel = () => {
       <DropdownMenuContent className="w-72 min-h-72 flex flex-col items-start  bg-white p-4">
         {notificationList.length > 0 ? (
           notificationList.map((notification) => (
-            <div key={notification.id} className="w-full ">
+            <div
+              key={notification.id}
+              className="w-full border-gray-100 flex items-center justify-center py-2 border-b-2 "
+            >
               <DropdownMenuItem className="outline-none cursor-pointer p-2 gap-4">
                 <p className="font-semibold text-sm">
                   {notification.message}

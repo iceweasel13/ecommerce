@@ -67,7 +67,7 @@ const Cart = () => {
         </div>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-72 pt-4">
+      <DropdownMenuContent className="w-72 pt-4 z-100 bg-white">
         {cart.length > 0 ? (
           <>
             {cart.map((item) => (
